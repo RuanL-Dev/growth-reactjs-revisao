@@ -23,7 +23,7 @@ export default function UseRefPage() {
       </div>
       <div>
         <h4>Exemplo com referência no input componente:</h4>
-        <Input type="text" ref={componentInputRef}/>
+        <Input type="text" ref={componentInputRef} />
         <button onClick={() => componentInputRef.current.focus()}>Foco no input</button>
       </div>
     </>
