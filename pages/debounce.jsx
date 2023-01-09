@@ -14,6 +14,7 @@ export default function DebouncePage() {
     if (debounce.current) clearInterval(debounce.current)
     debounce.current = setTimeout(searchData, 2000)
     return () => clearInterval(debounce.current)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
 
   return (
